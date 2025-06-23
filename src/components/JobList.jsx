@@ -1,4 +1,5 @@
 import JobCard from "./JobCard";
+import PropTypes from "prop-types";
 
 function JobList({ jobs }) {
   return (
@@ -9,5 +10,9 @@ function JobList({ jobs }) {
     </div>
   );
 }
+
+JobList.propTypes = {
+  jobs: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 
 export default JobList;

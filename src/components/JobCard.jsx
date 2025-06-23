@@ -1,3 +1,5 @@
+import PropTypes from "prop-types";
+
 function JobCard({ job }) {
   return (
     <div key={job.id}>
@@ -9,5 +11,16 @@ function JobCard({ job }) {
     </div>
   );
 }
+
+JobCard.propTypes = {
+  job: PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    position: PropTypes.string.isRequired,
+    company: PropTypes.string.isRequired,
+    status: PropTypes.string,
+    notes: PropTypes.string,
+    applied_date: PropTypes.string,
+  }),
+};
 
 export default JobCard;
