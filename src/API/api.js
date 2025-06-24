@@ -22,3 +22,15 @@ export async function createJob(job) {
   if (!res.ok) throw new Error(data.error || "Failed to create job");
   return data;
 }
+
+export async function deleteJob(id) {
+  const res = await fetch(`${API_URL}/${id}`, {
+    method: "DELETE",
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+
+  if (!res.ok) throw new Error("Failed to delete job");
+  return;
+}
