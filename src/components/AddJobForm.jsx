@@ -33,7 +33,7 @@ function AddJobForm() {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Add A Job</h2>
+      <h2>Add Job</h2>
       <label className="sr-only" htmlFor="position">
         Position:
       </label>

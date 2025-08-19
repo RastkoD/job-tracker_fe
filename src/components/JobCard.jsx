@@ -1,11 +1,9 @@
 import PropTypes from "prop-types";
 
-function JobCard({ job, onDelete }) {
+function JobCard({ job, onDelete, onUpdate }) {
   const onDeleteClick = (jobId) => {
     const confirm = window.confirm("Are you sure you want to delete this job?");
-
     if (!confirm) return;
-
     onDelete(jobId);
   };
 
@@ -19,7 +17,7 @@ function JobCard({ job, onDelete }) {
         <p>Applied on: {new Date(job.applied_date).toLocaleDateString()}</p>
       </div>
       <div>
-        <button>✍️</button>
+        <button onClick={() => onUpdate(job)}>✍️</button>
         <button onClick={() => onDeleteClick(job.id)}>🗑️</button>
       </div>
     </div>
