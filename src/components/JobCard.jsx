@@ -1,11 +1,13 @@
 import PropTypes from "prop-types";
 import "./JobCard.css";
+import { toast } from "react-toastify";
 
 function JobCard({ job, onDelete, onUpdate }) {
   const onDeleteClick = (jobId) => {
     const confirm = window.confirm("Are you sure you want to delete this job?");
     if (!confirm) return;
     onDelete(jobId);
+    toast.success("Job deleted successfully!");
   };
 
   return (

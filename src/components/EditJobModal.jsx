@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./EditJobModal.css";
+import { toast } from "react-toastify";
 
 function EditJobModal({ job, onSave, onClose }) {
   const [position, setPosition] = useState(job.position || "");
@@ -21,6 +22,7 @@ function EditJobModal({ job, onSave, onClose }) {
     };
 
     await onSave(updatedJob);
+    toast.success("Job updated successfully!");
     onClose();
   };
 

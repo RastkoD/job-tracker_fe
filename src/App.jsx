@@ -4,6 +4,8 @@ import JobList from "./components/JobList";
 import AddJobForm from "./components/AddJobForm";
 import EditJobModal from "./components/EditJobModal";
 import { deleteJob, getJobs, updateJob } from "./API/api";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [jobs, setJobs] = useState([]);
@@ -49,6 +51,7 @@ function App() {
           onClose={handleCloseModal}
         />
       )}
+      <ToastContainer autoClose={2500} />
     </div>
   );
 }

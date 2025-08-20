@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { createJob } from "../API/api";
 import "./AddJobForm.css";
+import { toast } from "react-toastify";
 
 function AddJobForm() {
   const [position, setPosition] = useState("");
@@ -26,9 +27,9 @@ function AddJobForm() {
       setStatus("");
       setNotes("");
       setApplied_date("");
-      console.log("Job added successfully!");
+      toast.success("Job added successfully!");
     } catch (err) {
-      console.error("Error submiting job:", err.message);
+      toast.error("Error submiting job:", err.message);
     }
   };
 
