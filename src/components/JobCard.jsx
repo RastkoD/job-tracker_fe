@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import "./JobCard.css";
 
 function JobCard({ job, onDelete, onUpdate }) {
   const onDeleteClick = (jobId) => {
@@ -8,17 +9,23 @@ function JobCard({ job, onDelete, onUpdate }) {
   };
 
   return (
-    <div key={job.id}>
+    <div className="jobCard" key={job.id}>
       <div>
         <h3>{job.position}</h3>
         <h4>{job.company}</h4>
         <p>Status: {job.status}</p>
-        <p>Notes: {job.notes}</p>
+        <p className="jobCardNotes" title={job.notes}>
+          Notes: {job.notes}
+        </p>
         <p>Applied on: {new Date(job.applied_date).toLocaleDateString()}</p>
       </div>
-      <div>
-        <button onClick={() => onUpdate(job)}>✍️</button>
-        <button onClick={() => onDeleteClick(job.id)}>🗑️</button>
+      <div className="jobCardBtns">
+        <button className="jobCardBtn" onClick={() => onUpdate(job)}>
+          edit
+        </button>
+        <button className="jobCardBtn" onClick={() => onDeleteClick(job.id)}>
+          delete
+        </button>
       </div>
     </div>
   );

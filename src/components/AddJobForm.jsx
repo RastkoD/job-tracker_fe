@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { createJob } from "../API/api";
+import "./AddJobForm.css";
 
 function AddJobForm() {
   const [position, setPosition] = useState("");

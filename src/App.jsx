@@ -38,7 +38,7 @@ function App() {
   }
 
   return (
-    <div>
+    <div className="app">
       <h1>Job Tracker</h1>
       <AddJobForm />
       <JobList jobs={jobs} onDelete={handleDelete} onUpdate={handleEditClick} />

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./EditJobModal.css";
 
 function EditJobModal({ job, onSave, onClose }) {
   const [position, setPosition] = useState(job.position || "");

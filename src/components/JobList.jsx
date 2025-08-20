@@ -1,9 +1,10 @@
 import JobCard from "./JobCard";
 import PropTypes from "prop-types";
+import "./JobList.css";
 
 function JobList({ jobs, onDelete, onUpdate }) {
   return (
-    <div className="job-list">
+    <div className="jobList">
       {jobs.map((job) => (
         <JobCard
           key={job.id}
@@ -18,8 +19,8 @@ function JobList({ jobs, onDelete, onUpdate }) {
 
 JobList.propTypes = {
   jobs: PropTypes.arrayOf(PropTypes.object).isRequired,
-  onDelete: PropTypes.func.isRequired, // Add this
-  onUpdate: PropTypes.func.isRequired, // Add this
+  onDelete: PropTypes.func.isRequired,
+  onUpdate: PropTypes.func.isRequired,
 };
 
 export default JobList;
