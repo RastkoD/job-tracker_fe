@@ -41,8 +41,9 @@ JobCard.propTypes = {
     status: PropTypes.string,
     notes: PropTypes.string,
     applied_date: PropTypes.string,
-    onDelete: PropTypes.func.isRequired,
-  }),
+  }).isRequired,
+  onDelete: PropTypes.func.isRequired,
+  onUpdate: PropTypes.func.isRequired,
 };
 
 export default JobCard;

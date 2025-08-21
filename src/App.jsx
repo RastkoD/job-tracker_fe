@@ -1,5 +1,4 @@
-import React from "react";
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import JobList from "./components/JobList";
 import AddJobForm from "./components/AddJobForm";
 import EditJobModal from "./components/EditJobModal";
@@ -9,6 +8,7 @@ import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   const [jobs, setJobs] = useState([]);
+  const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingJob, setEditingJob] = useState(null);
 
   useEffect(() => {
@@ -19,13 +19,11 @@ function App() {
 
   async function handleDelete(id) {
     await deleteJob(id);
-
     setJobs(jobs.filter((job) => job.id !== id));
   }
 
   async function handleUpdate(updatedJob) {
     const data = await updateJob(updatedJob.id, updatedJob);
-
     setJobs((prevJobs) =>
       prevJobs.map((job) => (job.id === data.id ? data : job))
     );
@@ -40,18 +38,33 @@ function App() {
   }
 
   return (
-    <div className="app">
+    <div className="App">
       <h1>Job Tracker</h1>
-      <AddJobForm />
-      <JobList jobs={jobs} onDelete={handleDelete} onUpdate={handleEditClick} />
+
+      <button onClick={() => setIsAddModalOpen(true)}>Add New Job</button>
+
+      {isAddModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <AddJobForm
+              onClose={() => setIsAddModalOpen(false)}
+              setJobs={setJobs}
+            />
+          </div>
+        </div>
+      )}
+
       {editingJob && (
         <EditJobModal
           job={editingJob}
-          onSave={handleUpdate}
           onClose={handleCloseModal}
+          onSave={handleUpdate}
         />
       )}
-      <ToastContainer autoClose={2500} />
+
+      <JobList jobs={jobs} onDelete={handleDelete} onUpdate={handleEditClick} />
+
+      <ToastContainer />
     </div>
   );
 }

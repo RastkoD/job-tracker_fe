@@ -1,9 +1,9 @@
 import { useState } from "react";
-import { createJob } from "../API/api";
+import { createJob, getJobs } from "../API/api";
 import "./AddJobForm.css";
 import { toast } from "react-toastify";
 
-function AddJobForm() {
+function AddJobForm({ onClose, setJobs }) {
   const [position, setPosition] = useState("");
   const [company, setCompany] = useState("");
   const [status, setStatus] = useState("Applied");
@@ -22,14 +22,19 @@ function AddJobForm() {
         applied_date,
       });
 
+      const updatedJobs = await getJobs();
+      setJobs(updatedJobs);
+
       setPosition("");
       setCompany("");
-      setStatus("");
+      setStatus("Applied");
       setNotes("");
       setApplied_date("");
+
       toast.success("Job added successfully!");
+      onClose();
     } catch (err) {
-      toast.error("Error submiting job:", err.message);
+      toast.error("Error submitting job: " + err.message);
     }
   };
 
@@ -96,6 +101,9 @@ function AddJobForm() {
         placeholder="Applied On"
       />
       <button type="submit">Submit</button>
+      <button type="button" onClick={onClose}>
+        Cancel
+      </button>
     </form>
   );
 }
