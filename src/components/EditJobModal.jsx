@@ -27,7 +27,7 @@ function EditJobModal({ job, onSave, onClose }) {
   };
 
   return (
-    <div className="modal-backdrop" onClick={onClose}>
+    <div className="modal" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <form onSubmit={handleSubmit}>
           <h2>Edit Job</h2>
@@ -90,8 +90,10 @@ function EditJobModal({ job, onSave, onClose }) {
             onChange={(e) => setAppliedDate(e.target.value)}
             placeholder="Applied On"
           />
-          <button type="submit">Save</button>
-          <button type="button" onClick={onClose}>
+          <button className="addJobFormBtn" type="submit">
+            Save
+          </button>
+          <button className="addJobFormBtn" type="button" onClick={onClose}>
             Cancel
           </button>
         </form>

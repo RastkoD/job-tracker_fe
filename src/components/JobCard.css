@@ -25,9 +25,8 @@
 .jobCardBtn {
   cursor: pointer;
   border-radius: var(--borderRadius);
-  font-family: var(--headingFont);
   letter-spacing: var(--letterSpacing);
-  padding: 1rem 2.5rem;
+  padding: 0.8rem 1.4rem;
   transition: var(--transition);
   text-transform: capitalize;
   display: inline-block;

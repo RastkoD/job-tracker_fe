@@ -38,10 +38,12 @@ function App() {
   }
 
   return (
-    <div className="App">
+    <div className="app">
       <h1>Job Tracker</h1>
 
-      <button onClick={() => setIsAddModalOpen(true)}>Add New Job</button>
+      <button className="addJobBtn" onClick={() => setIsAddModalOpen(true)}>
+        Add New Job
+      </button>
 
       {isAddModalOpen && (
         <div className="modal">

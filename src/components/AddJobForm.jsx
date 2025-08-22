@@ -39,7 +39,7 @@ function AddJobForm({ onClose, setJobs }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="addJobForm" onSubmit={handleSubmit}>
       <h2>Add Job</h2>
       <label className="sr-only" htmlFor="position">
         Position:
@@ -94,14 +94,17 @@ function AddJobForm({ onClose, setJobs }) {
         Applied On:
       </label>
       <input
+        className="datePicker"
         type="date"
         id="appliedDate"
         value={applied_date}
         onChange={(e) => setApplied_date(e.target.value)}
         placeholder="Applied On"
       />
-      <button type="submit">Submit</button>
-      <button type="button" onClick={onClose}>
+      <button className="addJobFormBtn" type="submit">
+        Submit
+      </button>
+      <button className="addJobFormBtn" type="button" onClick={onClose}>
         Cancel
       </button>
     </form>
