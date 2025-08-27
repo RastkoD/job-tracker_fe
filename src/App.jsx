@@ -10,6 +10,7 @@ function App() {
   const [jobs, setJobs] = useState([]);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingJob, setEditingJob] = useState(null);
+  const [searchInput, setSearchInput] = useState("");
 
   useEffect(() => {
     getJobs()
@@ -37,6 +38,10 @@ function App() {
     setEditingJob(null);
   }
 
+  const filteredJobs = jobs.filter((job) =>
+    job.company.toLowerCase().includes(searchInput.toLowerCase())
+  );
+
   return (
     <div className="app">
       <h1>Job Tracker</h1>
@@ -44,6 +49,14 @@ function App() {
       <button className="addJobBtn" onClick={() => setIsAddModalOpen(true)}>
         Add New Job
       </button>
+
+      <input
+        className="searchInput"
+        type="search"
+        value={searchInput}
+        onChange={(e) => setSearchInput(e.target.value)}
+        placeholder="Search by company..."
+      ></input>
 
       {isAddModalOpen && (
         <div className="modal">
@@ -64,7 +77,11 @@ function App() {
         />
       )}
 
-      <JobList jobs={jobs} onDelete={handleDelete} onUpdate={handleEditClick} />
+      <JobList
+        jobs={filteredJobs}
+        onDelete={handleDelete}
+        onUpdate={handleEditClick}
+      />
 
       <ToastContainer />
     </div>

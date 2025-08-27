@@ -13,8 +13,8 @@ function JobCard({ job, onDelete, onUpdate }) {
   return (
     <div className="jobCard" key={job.id}>
       <div>
-        <h3>{job.position}</h3>
-        <h4>{job.company}</h4>
+        <h2>{job.position}</h2>
+        <h3>{job.company}</h3>
         <p>Status: {job.status}</p>
         <p className="jobCardNotes" title={job.notes}>
           Notes: {job.notes}
