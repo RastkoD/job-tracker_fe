@@ -10,6 +10,12 @@ function JobCard({ job, onDelete, onUpdate }) {
     toast.success("Job deleted successfully!");
   };
 
+  function formatDate(dateString) {
+    if (!dateString) return "";
+    const date = new Date(dateString);
+    return date.toLocaleDateString("en-GB");
+  }
+
   return (
     <div className="jobCard" key={job.id}>
       <div>
@@ -19,7 +25,7 @@ function JobCard({ job, onDelete, onUpdate }) {
         <p className="jobCardNotes" title={job.notes}>
           Notes: {job.notes}
         </p>
-        <p>Applied on: {new Date(job.applied_date).toLocaleDateString()}</p>
+        <p>Applied on: {formatDate(job.applied_date)}</p>
       </div>
       <div className="jobCardBtns">
         <button className="jobCardBtn" onClick={() => onUpdate(job)}>

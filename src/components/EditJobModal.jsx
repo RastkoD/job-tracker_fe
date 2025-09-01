@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./EditJobModal.css";
+import "./AddJobForm.css";
 import { toast } from "react-toastify";
 
 function EditJobModal({ job, onSave, onClose }) {
