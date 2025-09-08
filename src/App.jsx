@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import JobList from "./components/JobList";
 import AddJobForm from "./components/AddJobForm";
 import EditJobModal from "./components/EditJobModal";
+import LoginForm from "./components/LoginForm";
 import { deleteJob, getJobs, updateJob } from "./API/api";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -11,12 +12,17 @@ function App() {
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
   const [editingJob, setEditingJob] = useState(null);
   const [searchInput, setSearchInput] = useState("");
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   useEffect(() => {
     getJobs()
       .then(setJobs)
       .catch((err) => console.error("Fetch error:", err));
   }, []);
+
+  const handleLogin = () => {
+    setIsAuthenticated(true);
+  };
 
   async function handleDelete(id) {
     await deleteJob(id);
@@ -41,6 +47,10 @@ function App() {
   const filteredJobs = jobs.filter((job) =>
     job.company.toLowerCase().includes(searchInput.toLowerCase())
   );
+
+  if (!isAuthenticated) {
+    return <LoginForm onLogin={handleLogin} />;
+  }
 
   return (
     <div className="app">

@@ -13,6 +13,7 @@ export async function createJob(job) {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
+      "x-app-password": import.meta.env.VITE_APP_PASSWORD,
     },
     body: JSON.stringify(job),
   });
@@ -28,6 +29,7 @@ export async function deleteJob(id) {
     method: "DELETE",
     headers: {
       "Content-Type": "application/json",
+      "x-app-password": import.meta.env.VITE_APP_PASSWORD,
     },
   });
 
@@ -38,7 +40,10 @@ export async function deleteJob(id) {
 export const updateJob = async (id, updatedJob) => {
   const res = await fetch(`${API_URL}/${id}`, {
     method: "PUT",
-    headers: { "Content-Type": "application/json" },
+    headers: {
+      "Content-Type": "application/json",
+      "x-app-password": import.meta.env.VITE_APP_PASSWORD,
+    },
     body: JSON.stringify(updatedJob),
   });
 
