@@ -63,8 +63,8 @@ function EditJobModal({ job, onSave, onClose }) {
             onChange={(e) => setStatus(e.target.value)}
           >
             <option value="Applied">Applied</option>
-            <option value="No Reply">No Reply</option>
             <option value="Ghosted">Ghosted</option>
+            <option value="Withdrawn">Withdrawn</option>
             <option value="Rejected">Rejected</option>
             <option value="Interview">Interview</option>
             <option value="Offer">Offer</option>
