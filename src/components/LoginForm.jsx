@@ -5,12 +5,27 @@ function LoginForm({ onLogin }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (password == import.meta.env.VITE_APP_PASSWORD) {
-      onLogin();
-    } else {
-      setError("Incorrect password");
+
+    try {
+      const res = await fetch(
+        "https://job-tracker-be.onrender.com/api/jobs/login",
+        {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ password }),
+        }
+      );
+
+      if (res.ok) {
+        onLogin();
+      } else {
+        const data = await res.json();
+        setError(data.error || "Login failed");
+      }
+    } catch (err) {
+      setError("Network error: " + err.message);
     }
   };
 
