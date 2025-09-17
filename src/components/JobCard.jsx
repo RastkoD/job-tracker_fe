@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import "./JobCard.css";
 import { toast } from "react-toastify";
 
-function JobCard({ job, onDelete, onUpdate }) {
+function JobCard({ job, onDelete, onUpdate, readOnly }) {
   const onDeleteClick = (jobId) => {
     const confirm = window.confirm("Are you sure you want to delete this job?");
     if (!confirm) return;
@@ -27,14 +27,16 @@ function JobCard({ job, onDelete, onUpdate }) {
         </p>
         <p>Applied on: {formatDate(job.applied_date)}</p>
       </div>
-      <div className="jobCardBtns">
-        <button className="jobCardBtn" onClick={() => onUpdate(job)}>
-          edit
-        </button>
-        <button className="jobCardBtn" onClick={() => onDeleteClick(job.id)}>
-          delete
-        </button>
-      </div>
+      {!readOnly && (
+        <div className="jobCardBtns">
+          <button className="jobCardBtn" onClick={() => onUpdate(job)}>
+            edit
+          </button>
+          <button className="jobCardBtn" onClick={() => onDeleteClick(job.id)}>
+            delete
+          </button>
+        </div>
+      )}
     </div>
   );
 }
@@ -50,6 +52,7 @@ JobCard.propTypes = {
   }).isRequired,
   onDelete: PropTypes.func.isRequired,
   onUpdate: PropTypes.func.isRequired,
+  readOnly: PropTypes.bool,
 };
 
 export default JobCard;

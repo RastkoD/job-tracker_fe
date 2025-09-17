@@ -13,20 +13,44 @@ function App() {
   const [editingJob, setEditingJob] = useState(null);
   const [searchInput, setSearchInput] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const [loginType, setLoginType] = useState(null);
 
   useEffect(() => {
-    getJobs()
-      .then(setJobs)
-      .catch((err) => console.error("Fetch error:", err));
-  }, []);
+    if (!isAuthenticated) return;
+
+    if (loginType === "real") {
+      getJobs()
+        .then(setJobs)
+        .catch((err) => console.error("Fetch error:", err));
+    } else if (loginType === "demo") {
+      fetch("/demoJobs.json")
+        .then((res) => res.json())
+        .then(setJobs)
+        .catch((err) => console.error("Demo fetch error:", err));
+    }
+  }, [isAuthenticated, loginType]);
 
   const handleLogin = () => {
     setIsAuthenticated(true);
+    setLoginType("real");
   };
+
+  const handleDemoLogin = () => {
+    setIsAuthenticated(true);
+    setLoginType("demo");
+  };
+
+  function handleLogout() {
+    setIsAuthenticated(false);
+    setLoginType(null);
+    setJobs([]);
+    setIsAddModalOpen(false);
+    setEditingJob(null);
+  }
 
   async function handleDelete(id) {
     await deleteJob(id);
-    setJobs(jobs.filter((job) => job.id !== id));
+    setJobs((prev) => prev.filter((job) => job.id !== id));
   }
 
   async function handleUpdate(updatedJob) {
@@ -49,16 +73,22 @@ function App() {
   );
 
   if (!isAuthenticated) {
-    return <LoginForm onLogin={handleLogin} />;
+    return <LoginForm onLogin={handleLogin} onDemoLogin={handleDemoLogin} />;
   }
 
   return (
     <div className="app">
       <h1>Job Tracker</h1>
-
-      <button className="addJobBtn" onClick={() => setIsAddModalOpen(true)}>
-        Add New Job
-      </button>
+      <div>
+        <button onClick={handleLogout} className="addJobBtn">
+          Logout
+        </button>
+      </div>
+      {loginType !== "demo" && (
+        <button className="addJobBtn" onClick={() => setIsAddModalOpen(true)}>
+          Add New Job
+        </button>
+      )}
 
       <input
         className="searchInput"
@@ -91,6 +121,7 @@ function App() {
         jobs={filteredJobs}
         onDelete={handleDelete}
         onUpdate={handleEditClick}
+        readOnly={loginType === "demo"}
       />
 
       <ToastContainer />

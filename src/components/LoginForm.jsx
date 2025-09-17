@@ -1,7 +1,8 @@
 import { useState } from "react";
 import "./AddJobForm.css";
+import PropTypes from "prop-types";
 
-function LoginForm({ onLogin }) {
+function LoginForm({ onLogin, onDemoLogin }) {
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
 
@@ -41,13 +42,23 @@ function LoginForm({ onLogin }) {
           placeholder="Password"
           required
         />
-        <button className="addJobFormBtn" type="submit">
-          Login
-        </button>
+        <div className="loginButtons">
+          <button className="addJobFormBtn" type="submit">
+            Login
+          </button>
+          <button className="addJobFormBtn" type="button" onClick={onDemoLogin}>
+            Demo
+          </button>
+        </div>
         {error && <p className="error">{error}</p>}
       </form>
     </div>
   );
 }
+
+LoginForm.propTypes = {
+  onLogin: PropTypes.func.isRequired,
+  onDemoLogin: PropTypes.func.isRequired,
+};
 
 export default LoginForm;

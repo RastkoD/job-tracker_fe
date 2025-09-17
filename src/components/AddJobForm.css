@@ -84,8 +84,10 @@ textarea {
   opacity: 0.8;
 }
 
-.addJobFormBtn:nth-of-type(1) {
-  margin-right: 2rem;
+.loginButtons {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .loginContainer {
