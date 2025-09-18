@@ -4,3 +4,10 @@
   gap: 1rem;
   width: 100%;
 }
+
+.emptyState {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--primary);
+  font-style: italic;
+}

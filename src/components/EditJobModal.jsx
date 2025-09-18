@@ -90,12 +90,14 @@ function EditJobModal({ job, onSave, onClose }) {
             onChange={(e) => setAppliedDate(e.target.value)}
             placeholder="Applied On"
           />
-          <button className="addJobFormBtn" type="submit">
-            Save
-          </button>
-          <button className="addJobFormBtn" type="button" onClick={onClose}>
-            Cancel
-          </button>
+          <div className="loginButtons">
+            <button className="addJobFormBtn" type="submit">
+              Save
+            </button>
+            <button className="addJobFormBtn" type="button" onClick={onClose}>
+              Cancel
+            </button>
+          </div>
         </form>
       </div>
     </div>

@@ -3,6 +3,10 @@ import PropTypes from "prop-types";
 import "./JobList.css";
 
 function JobList({ jobs, onDelete, onUpdate, readOnly }) {
+  if (jobs.length === 0) {
+    return <p className="emptyState">No jobs found!</p>;
+  }
+
   return (
     <div className="jobList">
       {jobs.map((job) => (

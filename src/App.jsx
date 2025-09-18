@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import JobList from "./components/JobList";
+import Modal from "./components/Modal";
 import AddJobForm from "./components/AddJobForm";
 import EditJobModal from "./components/EditJobModal";
 import LoginForm from "./components/LoginForm";
@@ -107,33 +108,28 @@ function App() {
       ></input>
 
       {isStatsModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <StatsModal
-              jobs={jobs}
-              onClose={() => setIsStatsModalOpen(false)}
-            />
-          </div>
-        </div>
+        <Modal onClose={() => setIsStatsModalOpen(false)}>
+          <StatsModal jobs={jobs} onClose={() => setIsStatsModalOpen(false)} />
+        </Modal>
       )}
 
       {isAddModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <AddJobForm
-              onClose={() => setIsAddModalOpen(false)}
-              setJobs={setJobs}
-            />
-          </div>
-        </div>
+        <Modal onClose={() => setIsAddModalOpen(false)}>
+          <AddJobForm
+            onClose={() => setIsAddModalOpen(false)}
+            setJobs={setJobs}
+          />
+        </Modal>
       )}
 
       {editingJob && (
-        <EditJobModal
-          job={editingJob}
-          onClose={handleCloseModal}
-          onSave={handleUpdate}
-        />
+        <Modal onClose={handleCloseModal}>
+          <EditJobModal
+            job={editingJob}
+            onClose={handleCloseModal}
+            onSave={handleUpdate}
+          />
+        </Modal>
       )}
 
       <JobList

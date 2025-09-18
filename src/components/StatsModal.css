@@ -4,3 +4,7 @@
   background: var(--gray);
   border-radius: var(--borderRadius);
 }
+
+.statsContainer li {
+  margin-top: 0.5rem;
+}
