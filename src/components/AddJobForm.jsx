@@ -101,12 +101,14 @@ function AddJobForm({ onClose, setJobs }) {
         onChange={(e) => setApplied_date(e.target.value)}
         placeholder="Applied On"
       />
-      <button className="addJobFormBtn" type="submit">
-        Submit
-      </button>
-      <button className="addJobFormBtn" type="button" onClick={onClose}>
-        Cancel
-      </button>
+      <div className="loginButtons">
+        <button className="addJobFormBtn" type="submit">
+          Submit
+        </button>
+        <button className="addJobFormBtn" type="button" onClick={onClose}>
+          Cancel
+        </button>
+      </div>
     </form>
   );
 }

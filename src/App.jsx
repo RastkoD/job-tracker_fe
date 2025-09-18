@@ -3,6 +3,7 @@ import JobList from "./components/JobList";
 import AddJobForm from "./components/AddJobForm";
 import EditJobModal from "./components/EditJobModal";
 import LoginForm from "./components/LoginForm";
+import StatsModal from "./components/StatsModal";
 import { deleteJob, getJobs, updateJob } from "./API/api";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -10,6 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 function App() {
   const [jobs, setJobs] = useState([]);
   const [isAddModalOpen, setIsAddModalOpen] = useState(false);
+  const [isStatsModalOpen, setIsStatsModalOpen] = useState(false);
   const [editingJob, setEditingJob] = useState(null);
   const [searchInput, setSearchInput] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -45,6 +47,7 @@ function App() {
     setLoginType(null);
     setJobs([]);
     setIsAddModalOpen(false);
+    setIsStatsModalOpen(false);
     setEditingJob(null);
   }
 
@@ -84,6 +87,11 @@ function App() {
           Logout
         </button>
       </div>
+      {loginType !== "real" && (
+        <button className="addJobBtn" onClick={() => setIsStatsModalOpen(true)}>
+          Stats
+        </button>
+      )}
       {loginType !== "demo" && (
         <button className="addJobBtn" onClick={() => setIsAddModalOpen(true)}>
           Add New Job
@@ -97,6 +105,17 @@ function App() {
         onChange={(e) => setSearchInput(e.target.value)}
         placeholder="Search by company..."
       ></input>
+
+      {isStatsModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <StatsModal
+              jobs={jobs}
+              onClose={() => setIsStatsModalOpen(false)}
+            />
+          </div>
+        </div>
+      )}
 
       {isAddModalOpen && (
         <div className="modal">

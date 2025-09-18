@@ -1,0 +1,6 @@
+.statsContainer {
+  padding: 2rem 3rem;
+  margin: 3rem auto;
+  background: var(--gray);
+  border-radius: var(--borderRadius);
+}
