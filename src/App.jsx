@@ -72,8 +72,10 @@ function App() {
     setEditingJob(null);
   }
 
-  const filteredJobs = jobs.filter((job) =>
-    job.company.toLowerCase().includes(searchInput.toLowerCase())
+  const filteredJobs = jobs.filter(
+    (job) =>
+      job.company.toLowerCase().includes(searchInput.toLowerCase()) ||
+      job.status.toLowerCase().includes(searchInput.toLowerCase())
   );
 
   if (!isAuthenticated) {
@@ -104,7 +106,7 @@ function App() {
         type="search"
         value={searchInput}
         onChange={(e) => setSearchInput(e.target.value)}
-        placeholder="Search by company..."
+        placeholder="Search by company or status..."
       ></input>
 
       {isStatsModalOpen && (
