@@ -26,7 +26,7 @@ select {
 input,
 textarea {
   width: 100%;
-  padding: 0.4rem 0.5rem;
+  padding: 0.6rem 0.8rem;
   border-radius: var(--borderRadius);
   background: var(--primary);
   border: 1px solid var(--gray);
@@ -46,36 +46,4 @@ textarea {
   color: var(--accent);
   letter-spacing: var(--letterSpacing);
   text-transform: capitalize;
-}
-
-.addJobFormBtn {
-  cursor: pointer;
-  border-radius: var(--borderRadius);
-  letter-spacing: var(--letterSpacing);
-  padding: 0.6rem 0.8rem;
-  transition: var(--transition);
-  text-transform: capitalize;
-  display: inline-block;
-  /* Prevent selecting the text */
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none;
-  color: black;
-  background: var(--primary);
-  border: none;
-  margin-top: 2rem;
-}
-
-.addJobFormBtn:hover {
-  opacity: 0.8;
-}
-
-.loginButtons {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-}
-
-.loginContainer {
-  text-align: center;
 }

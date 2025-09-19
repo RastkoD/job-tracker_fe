@@ -43,10 +43,10 @@ function LoginForm({ onLogin, onDemoLogin }) {
           required
         />
         <div className="loginButtons">
-          <button className="addJobFormBtn" type="submit">
+          <button className="addJobBtn" type="submit">
             Login
           </button>
-          <button className="addJobFormBtn" type="button" onClick={onDemoLogin}>
+          <button className="addJobBtn" type="button" onClick={onDemoLogin}>
             Demo
           </button>
         </div>
