@@ -8,3 +8,7 @@
 .statsContainer li {
   margin-top: 0.5rem;
 }
+
+.statsContainer .addJobBtn {
+  margin-bottom: 0;
+}

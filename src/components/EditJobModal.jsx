@@ -91,10 +91,10 @@ function EditJobModal({ job, onSave, onClose }) {
             placeholder="Applied On"
           />
           <div className="loginButtons">
-            <button className="addJobFormBtn" type="submit">
+            <button className="addJobBtn" type="submit">
               Save
             </button>
-            <button className="addJobFormBtn" type="button" onClick={onClose}>
+            <button className="addJobBtn" type="button" onClick={onClose}>
               Cancel
             </button>
           </div>

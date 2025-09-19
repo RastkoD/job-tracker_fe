@@ -35,7 +35,7 @@ function StatsModal({ jobs, onClose }) {
           {percent(jobStats.Withdrawn || 0)}%)
         </li>
       </ul>
-      <button className="addJobFormBtn" onClick={onClose}>
+      <button className="addJobBtn" onClick={onClose}>
         Close
       </button>
     </div>

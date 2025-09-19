@@ -102,10 +102,10 @@ function AddJobForm({ onClose, setJobs }) {
         placeholder="Applied On"
       />
       <div className="loginButtons">
-        <button className="addJobFormBtn" type="submit">
+        <button className="addJobBtn" type="submit">
           Submit
         </button>
-        <button className="addJobFormBtn" type="button" onClick={onClose}>
+        <button className="addJobBtn" type="button" onClick={onClose}>
           Cancel
         </button>
       </div>
