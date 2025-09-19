@@ -181,7 +181,7 @@ textarea {
   font: inherit;
   color: inherit;
   box-sizing: border-box;
-  padding: 0.8rem 1rem;
+  padding: 0.8rem;
   border-radius: var(--borderRadius);
 }
 
