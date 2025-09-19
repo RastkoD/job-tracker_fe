@@ -162,6 +162,10 @@ ul {
   margin-bottom: 1rem;
 }
 
+select {
+  padding: 0.6rem;
+}
+
 .loginButtons {
   margin-top: 2rem;
   display: flex;
