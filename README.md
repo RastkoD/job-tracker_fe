@@ -1,4 +1,4 @@
-# JobTrckr
+# JobTrckr 💼
 
 A full-stack job application tracking web app built to manage, organize, and analyze job search activity in a single dashboard.  
 The project focuses on clean UX, efficient CRUD workflows, authentication, and real-world application logic.
