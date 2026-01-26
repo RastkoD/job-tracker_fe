@@ -1,9 +1,117 @@
 [
   {
+    "id": "ab48df66-9991-4a26-8293-e3abc826a526",
+    "company": "Synthesia",
+    "position": "Webflow Developer",
+    "status": "Applied",
+    "applied_date": "2026-01-23",
+    "notes": "/",
+    "created_at": "2026-01-23T15:07:56.097628+00:00"
+  },
+  {
+    "id": "c935d489-44a2-410d-8622-3efa4063cf5a",
+    "company": "Gentoo Media",
+    "position": "Website Coordinator",
+    "status": "Rejected",
+    "applied_date": "2026-01-23",
+    "notes": "R | 26/01/2026",
+    "created_at": "2026-01-23T15:17:14.464639+00:00"
+  },
+  {
+    "id": "e82649af-df1f-48ef-8deb-08105bb875b8",
+    "company": "FXGT",
+    "position": "WordPress Developer",
+    "status": "Applied",
+    "applied_date": "2026-01-22",
+    "notes": "/",
+    "created_at": "2026-01-22T11:35:51.516539+00:00"
+  },
+  {
+    "id": "3fdf4fa2-1523-4f75-a338-8372185a4a86",
+    "company": "GoDaddy",
+    "position": "User Experience Engineer",
+    "status": "Applied",
+    "applied_date": "2026-01-21",
+    "notes": "/",
+    "created_at": "2026-01-21T15:19:46.780969+00:00"
+  },
+  {
+    "id": "35c6bc29-10ff-4b5c-a7b2-da7295115f2e",
+    "company": "ADI Global Distribution(Resideo)",
+    "position": "Junior Full Stack Engineer",
+    "status": "Applied",
+    "applied_date": "2026-01-09",
+    "notes": "/",
+    "created_at": "2026-01-09T19:41:51.133099+00:00"
+  },
+  {
+    "id": "d07d7c4a-b9d7-4600-9e7c-8ff5c055850e",
+    "company": "ADI Global Distribution(Resideo)",
+    "position": "Junior Frontend Developer",
+    "status": "Rejected",
+    "applied_date": "2026-01-09",
+    "notes": "R | 19/01/2026",
+    "created_at": "2026-01-09T19:41:23.974083+00:00"
+  },
+  {
+    "id": "4be9c692-1999-4f80-b7d1-b0709fd4c45f",
+    "company": "Technosigma",
+    "position": "Frontend Developer",
+    "status": "Applied",
+    "applied_date": "2026-01-09",
+    "notes": "/",
+    "created_at": "2026-01-09T19:33:34.027708+00:00"
+  },
+  {
+    "id": "26c17598-28b1-4069-b368-ccee214577b7",
+    "company": "Immersive Garden",
+    "position": "Dev/Motion Intern",
+    "status": "Applied",
+    "applied_date": "2026-01-06",
+    "notes": "/",
+    "created_at": "2026-01-06T20:22:46.257915+00:00"
+  },
+  {
+    "id": "c4b9f32f-52a7-4b06-be50-2387791e24e2",
+    "company": "Confidencial",
+    "position": "Junior Software Developer",
+    "status": "Rejected",
+    "applied_date": "2026-01-03",
+    "notes": "R | 06/01/2026",
+    "created_at": "2026-01-03T14:24:27.600686+00:00"
+  },
+  {
+    "id": "9af99828-fbe3-4a1f-a8b5-612cb0ad985f",
+    "company": "360Dialog",
+    "position": "Junior Frontend Developer",
+    "status": "Applied",
+    "applied_date": "2025-12-25",
+    "notes": "/",
+    "created_at": "2025-12-25T00:01:08.18449+00:00"
+  },
+  {
+    "id": "d14e50f3-02fe-43d1-8617-bc5b4c25dca3",
+    "company": "Influee",
+    "position": "Frontend Developer",
+    "status": "Rejected",
+    "applied_date": "2025-12-15",
+    "notes": "R | 14/01/2026",
+    "created_at": "2025-12-15T19:05:07.612917+00:00"
+  },
+  {
+    "id": "b930a1af-49e5-406c-b5eb-37b5ed4ac315",
+    "company": "Insightful",
+    "position": "Junior Backend Developer",
+    "status": "Ghosted",
+    "applied_date": "2025-12-12",
+    "notes": "/",
+    "created_at": "2025-12-12T20:54:23.405783+00:00"
+  },
+  {
     "id": "109e1980-f566-4d0e-b5f8-ae8c2a008c57",
     "company": "Codelogix",
     "position": "React.js Developer",
-    "status": "Applied",
+    "status": "Ghosted",
     "applied_date": "2025-12-01",
     "notes": "/",
     "created_at": "2025-12-01T21:07:02.344731+00:00"
@@ -12,7 +120,7 @@
     "id": "a8244bc9-b374-4d43-8f41-fedc462d5e74",
     "company": "Thrive Talent Solutions d.o.o.",
     "position": "Web Developer (WordPress)",
-    "status": "Applied",
+    "status": "Ghosted",
     "applied_date": "2025-11-27",
     "notes": "/",
     "created_at": "2025-11-28T11:51:58.141574+00:00"
@@ -21,37 +129,19 @@
     "id": "9b433bbf-81c6-4653-90ec-51c1838546bc",
     "company": "Good Guys Web Agency",
     "position": "Webflow Developer",
-    "status": "Applied",
+    "status": "Interview",
     "applied_date": "2025-11-05",
-    "notes": "/",
+    "notes": "I | 16/12/2025",
     "created_at": "2025-11-05T20:59:42.961229+00:00"
   },
   {
     "id": "060e66e8-e8a2-4384-a288-b4ef3933d83e",
     "company": "Neuralab",
     "position": "Senior WordPress Developer",
-    "status": "Applied",
+    "status": "Ghosted",
     "applied_date": "2025-11-01",
     "notes": "/",
     "created_at": "2025-11-01T22:09:07.486286+00:00"
-  },
-  {
-    "id": "a164645f-b62c-44ef-957d-d9255e129695",
-    "company": "AM Marketing i dizajn",
-    "position": "SEO asistent",
-    "status": "Applied",
-    "applied_date": "2025-10-27",
-    "notes": "/",
-    "created_at": "2025-10-27T10:37:53.84538+00:00"
-  },
-  {
-    "id": "ab43027a-2341-4c83-b8ff-b94e8a298d57",
-    "company": "Smartico.ai",
-    "position": "Web Content Manager",
-    "status": "Rejected",
-    "applied_date": "2025-10-27",
-    "notes": "/",
-    "created_at": "2025-10-27T14:15:44.162245+00:00"
   },
   {
     "id": "b8d8a40d-3358-4859-80da-d82418ea8555",
@@ -63,13 +153,40 @@
     "created_at": "2025-10-27T14:15:10.578557+00:00"
   },
   {
+    "id": "a164645f-b62c-44ef-957d-d9255e129695",
+    "company": "AM Marketing i dizajn",
+    "position": "SEO asistent",
+    "status": "Ghosted",
+    "applied_date": "2025-10-27",
+    "notes": "/",
+    "created_at": "2025-10-27T10:37:53.84538+00:00"
+  },
+  {
     "id": "897db270-f8fc-4a7f-948c-133798377047",
     "company": "TR3I d.o.o.",
     "position": "Mid FE Developer",
-    "status": "Applied",
+    "status": "Ghosted",
     "applied_date": "2025-10-27",
     "notes": "/",
     "created_at": "2025-10-27T10:39:27.425949+00:00"
+  },
+  {
+    "id": "ab43027a-2341-4c83-b8ff-b94e8a298d57",
+    "company": "Smartico.ai",
+    "position": "Web Content Manager",
+    "status": "Rejected",
+    "applied_date": "2025-10-27",
+    "notes": "/",
+    "created_at": "2025-10-27T14:15:44.162245+00:00"
+  },
+  {
+    "id": "e0080006-da0b-4dc9-8786-e66cc4a34e67",
+    "company": "Wargaming",
+    "position": "Frontend Game Developer",
+    "status": "Rejected",
+    "applied_date": "2025-10-23",
+    "notes": "/",
+    "created_at": "2025-10-23T13:25:40.987996+00:00"
   },
   {
     "id": "b6deeef1-8a50-478d-8e3d-b1ee4c73b31b",
@@ -90,13 +207,13 @@
     "created_at": "2025-10-23T13:25:03.956757+00:00"
   },
   {
-    "id": "e0080006-da0b-4dc9-8786-e66cc4a34e67",
-    "company": "Wargaming",
-    "position": "Frontend Game Developer",
-    "status": "Rejected",
-    "applied_date": "2025-10-23",
+    "id": "693a7d0a-ddcd-41d1-b6cd-5f76c2b7df28",
+    "company": "TNation",
+    "position": "Junior JS developer",
+    "status": "Ghosted",
+    "applied_date": "2025-10-20",
     "notes": "/",
-    "created_at": "2025-10-23T13:25:40.987996+00:00"
+    "created_at": "2025-10-20T16:13:45.514344+00:00"
   },
   {
     "id": "facfe55f-8a4e-4783-a64b-a61cbdb94fee",
@@ -108,13 +225,13 @@
     "created_at": "2025-10-20T16:13:06.634192+00:00"
   },
   {
-    "id": "693a7d0a-ddcd-41d1-b6cd-5f76c2b7df28",
-    "company": "TNation",
-    "position": "Junior JS developer",
+    "id": "ef44d073-bad3-4d98-aa97-f6dde492d9ca",
+    "company": "Silver Bell Group",
+    "position": "WordPress Developer",
     "status": "Ghosted",
-    "applied_date": "2025-10-20",
+    "applied_date": "2025-10-16",
     "notes": "/",
-    "created_at": "2025-10-20T16:13:45.514344+00:00"
+    "created_at": "2025-10-16T12:10:35.872993+00:00"
   },
   {
     "id": "0e904b28-5ab0-4ab0-92e3-3eb6c0ef564c",
@@ -126,15 +243,6 @@
     "created_at": "2025-10-16T12:12:05.78908+00:00"
   },
   {
-    "id": "ef44d073-bad3-4d98-aa97-f6dde492d9ca",
-    "company": "Silver Bell Group",
-    "position": "WordPress Developer",
-    "status": "Ghosted",
-    "applied_date": "2025-10-16",
-    "notes": "/",
-    "created_at": "2025-10-16T12:10:35.872993+00:00"
-  },
-  {
     "id": "f20d6169-cc1c-4122-8b6b-a67ab075eb4e",
     "company": "Good Guys Web Agency",
     "position": "Webflow Developer",
@@ -144,15 +252,6 @@
     "created_at": "2025-10-15T13:43:58.218795+00:00"
   },
   {
-    "id": "10ef5ac3-43ae-4995-8d97-ed46d81e4a79",
-    "company": "Dormeo Home d.o.o.",
-    "position": "Senior Frontend Developer",
-    "status": "Ghosted",
-    "applied_date": "2025-10-13",
-    "notes": "Application was viewed.",
-    "created_at": "2025-10-13T20:19:56.516271+00:00"
-  },
-  {
     "id": "9678ecc9-2e70-49c1-a7ce-7399d002aad6",
     "company": "Tech Tribe d.o.o.",
     "position": "Software Developer",
@@ -160,6 +259,15 @@
     "applied_date": "2025-10-13",
     "notes": "/",
     "created_at": "2025-10-13T20:20:35.966243+00:00"
+  },
+  {
+    "id": "10ef5ac3-43ae-4995-8d97-ed46d81e4a79",
+    "company": "Dormeo Home d.o.o.",
+    "position": "Senior Frontend Developer",
+    "status": "Ghosted",
+    "applied_date": "2025-10-13",
+    "notes": "Application was viewed.",
+    "created_at": "2025-10-13T20:19:56.516271+00:00"
   },
   {
     "id": "0e66d845-ff25-4c29-abf7-56011ee18ec1",
@@ -252,15 +360,6 @@
     "created_at": "2025-09-12T10:55:37.709937+00:00"
   },
   {
-    "id": "ffe9c743-eac1-4971-ab1a-463d3d70ae6c",
-    "company": "CreativeCorner Studio",
-    "position": "Webflow Developer",
-    "status": "Rejected",
-    "applied_date": "2025-09-04",
-    "notes": "/",
-    "created_at": "2025-09-05T14:37:34.105221+00:00"
-  },
-  {
     "id": "c12b2250-42f3-4348-9bcd-2a736858821e",
     "company": "Oktopeak d.o.o.",
     "position": "Junior Frontend Developer",
@@ -268,6 +367,15 @@
     "applied_date": "2025-09-04",
     "notes": "/",
     "created_at": "2025-09-05T14:38:30.742527+00:00"
+  },
+  {
+    "id": "ffe9c743-eac1-4971-ab1a-463d3d70ae6c",
+    "company": "CreativeCorner Studio",
+    "position": "Webflow Developer",
+    "status": "Rejected",
+    "applied_date": "2025-09-04",
+    "notes": "/",
+    "created_at": "2025-09-05T14:37:34.105221+00:00"
   },
   {
     "id": "c7816786-9b18-4a44-82b3-60754759c184",
@@ -288,13 +396,13 @@
     "created_at": "2025-09-01T11:49:21.861369+00:00"
   },
   {
-    "id": "a457d5ce-dd34-45f4-a6c6-549f6e87bbe1",
-    "company": "BillingPlatform",
-    "position": "Frontend Developer",
+    "id": "6d22c6ce-ca4e-49e3-ac68-34446a5df8f5",
+    "company": "Social Discovery Group",
+    "position": "Middle Frontend Developer",
     "status": "Rejected",
     "applied_date": "2025-08-30",
     "notes": "/",
-    "created_at": "2025-09-01T11:47:51.526524+00:00"
+    "created_at": "2025-09-01T11:48:30.846323+00:00"
   },
   {
     "id": "08f861e5-ec20-489b-a705-a992d53e2429",
@@ -306,13 +414,13 @@
     "created_at": "2025-09-01T11:43:13.833125+00:00"
   },
   {
-    "id": "6d22c6ce-ca4e-49e3-ac68-34446a5df8f5",
-    "company": "Social Discovery Group",
-    "position": "Middle Frontend Developer",
+    "id": "a457d5ce-dd34-45f4-a6c6-549f6e87bbe1",
+    "company": "BillingPlatform",
+    "position": "Frontend Developer",
     "status": "Rejected",
     "applied_date": "2025-08-30",
     "notes": "/",
-    "created_at": "2025-09-01T11:48:30.846323+00:00"
+    "created_at": "2025-09-01T11:47:51.526524+00:00"
   },
   {
     "id": "7053005f-3444-43ff-8f50-57cec6fb0cac",
@@ -369,12 +477,12 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "0bc65e03-03da-4b81-9118-1da9cd0da367",
-    "company": "monday.com",
-    "position": "Webflow Developer",
+    "id": "9784a02d-711c-45d5-9c4e-31e699a10201",
+    "company": "Neo Group",
+    "position": "Frontend Developer",
     "status": "Rejected",
     "applied_date": "2025-08-18",
-    "notes": "*",
+    "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
@@ -390,15 +498,6 @@
     "id": "e722c5a3-e736-4e60-98f7-b6a8452d606d",
     "company": "JDKRUEGER&CO",
     "position": "Junior Technical Developer",
-    "status": "Rejected",
-    "applied_date": "2025-08-18",
-    "notes": "/",
-    "created_at": "2025-09-01T11:32:19.026995+00:00"
-  },
-  {
-    "id": "9784a02d-711c-45d5-9c4e-31e699a10201",
-    "company": "Neo Group",
-    "position": "Frontend Developer",
     "status": "Rejected",
     "applied_date": "2025-08-18",
     "notes": "/",
@@ -423,6 +522,15 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
+    "id": "0bc65e03-03da-4b81-9118-1da9cd0da367",
+    "company": "monday.com",
+    "position": "Webflow Developer",
+    "status": "Rejected",
+    "applied_date": "2025-08-18",
+    "notes": "*",
+    "created_at": "2025-09-01T11:32:19.026995+00:00"
+  },
+  {
     "id": "dc8de081-ddb3-4877-83aa-cbca6f1b853f",
     "company": "MaxAccelerate",
     "position": "Landing Pages Developer",
@@ -441,15 +549,6 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "048e8bb5-40e3-4136-a5d3-5f616832d8d0",
-    "company": "Holycode",
-    "position": "General Application",
-    "status": "Ghosted",
-    "applied_date": "2025-08-13",
-    "notes": "/",
-    "created_at": "2025-09-01T11:32:19.026995+00:00"
-  },
-  {
     "id": "b252ca75-a03c-43c8-91a9-a1aa717ace2d",
     "company": "Liferay",
     "position": "Frontend Developer",
@@ -459,20 +558,11 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "b6748c02-7da7-4a1e-9754-467aa6ebb0e5",
-    "company": "etalytics GmbH",
-    "position": "Webflow Web Design Intern",
-    "status": "Rejected",
-    "applied_date": "2025-08-12",
-    "notes": "/",
-    "created_at": "2025-09-01T11:32:19.026995+00:00"
-  },
-  {
-    "id": "2d2f7217-897c-49b5-a1bf-aa5424591ea5",
-    "company": "Geniuses Software",
-    "position": "Front End Developer",
+    "id": "048e8bb5-40e3-4136-a5d3-5f616832d8d0",
+    "company": "Holycode",
+    "position": "General Application",
     "status": "Ghosted",
-    "applied_date": "2025-08-12",
+    "applied_date": "2025-08-13",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
@@ -486,10 +576,28 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
+    "id": "b6748c02-7da7-4a1e-9754-467aa6ebb0e5",
+    "company": "etalytics GmbH",
+    "position": "Webflow Web Design Intern",
+    "status": "Rejected",
+    "applied_date": "2025-08-12",
+    "notes": "/",
+    "created_at": "2025-09-01T11:32:19.026995+00:00"
+  },
+  {
     "id": "a62af0b6-76df-461b-a56b-d7ad6e31c0b9",
     "company": "Ruby Labs",
     "position": "Junior Developer",
     "status": "Rejected",
+    "applied_date": "2025-08-12",
+    "notes": "/",
+    "created_at": "2025-09-01T11:32:19.026995+00:00"
+  },
+  {
+    "id": "2d2f7217-897c-49b5-a1bf-aa5424591ea5",
+    "company": "Geniuses Software",
+    "position": "Front End Developer",
+    "status": "Ghosted",
     "applied_date": "2025-08-12",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
@@ -513,24 +621,6 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "470e231f-13a3-4b04-b4c0-cef3ff772169",
-    "company": "Icentic soft d.o.o.",
-    "position": "React Frontend Developer",
-    "status": "Ghosted",
-    "applied_date": "2025-08-07",
-    "notes": "/",
-    "created_at": "2025-09-01T11:32:19.026995+00:00"
-  },
-  {
-    "id": "c62135b9-ebb4-48aa-b470-c06fb01f7cac",
-    "company": "Outliant",
-    "position": "Frontend Engineer II",
-    "status": "Ghosted",
-    "applied_date": "2025-08-07",
-    "notes": "/",
-    "created_at": "2025-09-01T11:32:19.026995+00:00"
-  },
-  {
     "id": "6169f40c-62a3-4714-a8c6-a2b9b5ffea34",
     "company": "GR8 Tech",
     "position": "Middle Web Developer",
@@ -549,11 +639,20 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "3aa141bf-e393-458b-8bb6-dd88b5f2a46d",
-    "company": "The Choice Digital Marketing Agencija",
-    "position": "Wordpress Developer",
+    "id": "470e231f-13a3-4b04-b4c0-cef3ff772169",
+    "company": "Icentic soft d.o.o.",
+    "position": "React Frontend Developer",
     "status": "Ghosted",
-    "applied_date": "2025-08-06",
+    "applied_date": "2025-08-07",
+    "notes": "/",
+    "created_at": "2025-09-01T11:32:19.026995+00:00"
+  },
+  {
+    "id": "c62135b9-ebb4-48aa-b470-c06fb01f7cac",
+    "company": "Outliant",
+    "position": "Frontend Engineer II",
+    "status": "Ghosted",
+    "applied_date": "2025-08-07",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
@@ -567,11 +666,11 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "aacd1512-0e81-4c9a-ad63-20045738700c",
-    "company": "Kirey d.o.o.",
-    "position": "Front-end Developer",
+    "id": "3aa141bf-e393-458b-8bb6-dd88b5f2a46d",
+    "company": "The Choice Digital Marketing Agencija",
+    "position": "Wordpress Developer",
     "status": "Ghosted",
-    "applied_date": "2025-08-05",
+    "applied_date": "2025-08-06",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
@@ -594,11 +693,11 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "61ab3e3a-5fa4-40a3-9f80-13154b7d4982",
-    "company": "Cheil Adriatic",
-    "position": "Junior Web Publisher",
+    "id": "aacd1512-0e81-4c9a-ad63-20045738700c",
+    "company": "Kirey d.o.o.",
+    "position": "Front-end Developer",
     "status": "Ghosted",
-    "applied_date": "2025-08-01",
+    "applied_date": "2025-08-05",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
@@ -606,6 +705,15 @@
     "id": "61b1a497-ff53-4b2d-b6d8-0ce4d7e94781",
     "company": "Mange Ltd",
     "position": "Front-End Developer",
+    "status": "Ghosted",
+    "applied_date": "2025-08-01",
+    "notes": "/",
+    "created_at": "2025-09-01T11:32:19.026995+00:00"
+  },
+  {
+    "id": "61ab3e3a-5fa4-40a3-9f80-13154b7d4982",
+    "company": "Cheil Adriatic",
+    "position": "Junior Web Publisher",
     "status": "Ghosted",
     "applied_date": "2025-08-01",
     "notes": "/",
@@ -630,9 +738,9 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "f19ecfd2-8d23-4920-8628-f39a4b62bb30",
-    "company": "Social Discovery Group",
-    "position": "Middle Frontend Developer",
+    "id": "01bc7b99-8327-44c6-a8ba-7afcf1cda2a2",
+    "company": "Relax Gaming",
+    "position": "Frontend Game Developer",
     "status": "Rejected",
     "applied_date": "2025-07-29",
     "notes": "/",
@@ -648,18 +756,18 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "01bc7b99-8327-44c6-a8ba-7afcf1cda2a2",
-    "company": "Relax Gaming",
-    "position": "Frontend Game Developer",
+    "id": "f19ecfd2-8d23-4920-8628-f39a4b62bb30",
+    "company": "Social Discovery Group",
+    "position": "Middle Frontend Developer",
     "status": "Rejected",
     "applied_date": "2025-07-29",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "226c3f3d-c140-49d5-88c3-7c7eacef9949",
-    "company": "EZDERM",
-    "position": "React Developer",
+    "id": "bcb24178-2460-4456-aaab-11d5f33edc8b",
+    "company": "Eqytech",
+    "position": "Junior Full-Stack Developer",
     "status": "Ghosted",
     "applied_date": "2025-07-28",
     "notes": "/",
@@ -684,9 +792,9 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "bcb24178-2460-4456-aaab-11d5f33edc8b",
-    "company": "Eqytech",
-    "position": "Junior Full-Stack Developer",
+    "id": "226c3f3d-c140-49d5-88c3-7c7eacef9949",
+    "company": "EZDERM",
+    "position": "React Developer",
     "status": "Ghosted",
     "applied_date": "2025-07-28",
     "notes": "/",
@@ -711,21 +819,21 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "a4e7d53d-0fe5-4be0-82cd-4e3f9ab4dabe",
-    "company": "Natura Labs",
-    "position": "Web Designer",
-    "status": "Withdrawn",
-    "applied_date": "2025-07-11",
-    "notes": "They assigned a large unpaid test task (branding guideline landing page redesign and social media kit for “Fit On”). I felt it was essentially doing their job for free.(https://docs.google.com/document/d/1NgN28xI7OE5jz9ip3hxL4XfSzDx7BtJnd_bU6EE-w7I/edit?tab=t.0)",
-    "created_at": "2025-09-01T11:32:19.026995+00:00"
-  },
-  {
     "id": "56ba699f-f31c-4a11-8058-569251578a4e",
     "company": "Bloq Labs",
     "position": "Webflow Developer",
     "status": "Rejected",
     "applied_date": "2025-07-11",
     "notes": "/",
+    "created_at": "2025-09-01T11:32:19.026995+00:00"
+  },
+  {
+    "id": "a4e7d53d-0fe5-4be0-82cd-4e3f9ab4dabe",
+    "company": "Natura Labs",
+    "position": "Web Designer",
+    "status": "Withdrawn",
+    "applied_date": "2025-07-11",
+    "notes": "They assigned a large unpaid test task (branding guideline landing page redesign and social media kit for “Fit On”). I felt it was essentially doing their job for free.(https://docs.google.com/document/d/1NgN28xI7OE5jz9ip3hxL4XfSzDx7BtJnd_bU6EE-w7I/edit?tab=t.0)",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
@@ -747,18 +855,18 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "44ce23f3-fb59-4f76-99fb-caebd50708d3",
-    "company": "Philadelphia Truck Parts",
-    "position": "Frontend Developer",
+    "id": "95685a37-755a-4d65-85eb-01e32c3e1169",
+    "company": "MultiversX",
+    "position": "Front-End Engineer",
     "status": "Ghosted",
     "applied_date": "2025-07-07",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "95685a37-755a-4d65-85eb-01e32c3e1169",
-    "company": "MultiversX",
-    "position": "Front-End Engineer",
+    "id": "44ce23f3-fb59-4f76-99fb-caebd50708d3",
+    "company": "Philadelphia Truck Parts",
+    "position": "Frontend Developer",
     "status": "Ghosted",
     "applied_date": "2025-07-07",
     "notes": "/",
@@ -900,18 +1008,18 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "13af14bc-b4ba-4d64-9cfb-6a5235528925",
-    "company": "Bottletop Media",
-    "position": "Junior Frontend Developer",
+    "id": "a55fe922-7083-4d19-a9bc-461db97335d9",
+    "company": "Sichtbarer Werden GmbH",
+    "position": "Experienced WordPress Developer",
     "status": "Ghosted",
     "applied_date": "2025-04-24",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "a55fe922-7083-4d19-a9bc-461db97335d9",
-    "company": "Sichtbarer Werden GmbH",
-    "position": "Experienced WordPress Developer",
+    "id": "13af14bc-b4ba-4d64-9cfb-6a5235528925",
+    "company": "Bottletop Media",
+    "position": "Junior Frontend Developer",
     "status": "Ghosted",
     "applied_date": "2025-04-24",
     "notes": "/",
@@ -990,18 +1098,18 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "51694cc6-fb50-443e-842b-5c46aaf70050",
-    "company": "The Choice Digital Marketing Agencija",
-    "position": "Wordpress Developer",
+    "id": "a269abc3-0b6b-492b-ab06-27ebd7bfbf8a",
+    "company": "Kunsh Technologies",
+    "position": "Junior/Middle Frontend Developer",
     "status": "Ghosted",
     "applied_date": "2024-12-20",
     "notes": "/",
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "a269abc3-0b6b-492b-ab06-27ebd7bfbf8a",
-    "company": "Kunsh Technologies",
-    "position": "Junior/Middle Frontend Developer",
+    "id": "51694cc6-fb50-443e-842b-5c46aaf70050",
+    "company": "The Choice Digital Marketing Agencija",
+    "position": "Wordpress Developer",
     "status": "Ghosted",
     "applied_date": "2024-12-20",
     "notes": "/",
@@ -1116,9 +1224,9 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "3620d60f-747f-41bc-bef1-64400f07fbcf",
-    "company": "KMS Lighthouse",
-    "position": "Front End Developer",
+    "id": "4723d12d-766d-4780-9d7c-18cc31eddfa3",
+    "company": "Touch Me Soft d.o.o.",
+    "position": "Junior Frontend Developer",
     "status": "Ghosted",
     "applied_date": "2024-11-05",
     "notes": "/",
@@ -1170,9 +1278,9 @@
     "created_at": "2025-09-01T11:32:19.026995+00:00"
   },
   {
-    "id": "4723d12d-766d-4780-9d7c-18cc31eddfa3",
-    "company": "Touch Me Soft d.o.o.",
-    "position": "Junior Frontend Developer",
+    "id": "3620d60f-747f-41bc-bef1-64400f07fbcf",
+    "company": "KMS Lighthouse",
+    "position": "Front End Developer",
     "status": "Ghosted",
     "applied_date": "2024-11-05",
     "notes": "/",
